@@ -1,6 +1,6 @@
 use std::num::ParseIntError;
 
-use axum::{extract::Path, http::StatusCode, response::{IntoResponse, Response}};
+use axum::{extract::Path, http::StatusCode, response::IntoResponse};
 
 pub async fn day01(Path((num1, num2)): Path<(u32, u32)>) -> impl IntoResponse {
     dbg!((num1,num2));
